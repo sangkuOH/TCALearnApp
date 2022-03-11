@@ -9,11 +9,7 @@ import Foundation
 import ComposableArchitecture
 
 
-let onboardingReducer: Reducer<
-	OnboardingState,
-	OnboardingAction,
-	OnboardingEnvironment
-> =
+let onboardingReducer: Reducer<OnboardingState, OnboardingAction, OnboardingEnvironment> =
 	.init { state, action, environment in
 		switch action {
 		case .onAppear:
