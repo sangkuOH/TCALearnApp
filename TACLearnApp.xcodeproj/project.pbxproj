@@ -1,0 +1,867 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD067E5127D9DDD300EF0D6E /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD067E5027D9DDD300EF0D6E /* Tests_iOS.swift */; };
+		AD067E5327D9DDD300EF0D6E /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD067E5227D9DDD300EF0D6E /* Tests_iOSLaunchTests.swift */; };
+		AD067E5D27D9DDD300EF0D6E /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD067E5C27D9DDD300EF0D6E /* Tests_macOS.swift */; };
+		AD067E5F27D9DDD300EF0D6E /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD067E5E27D9DDD300EF0D6E /* Tests_macOSLaunchTests.swift */; };
+		AD067E6027D9DDD300EF0D6E /* TACLeanAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD067E3827D9DDD200EF0D6E /* TACLeanAppApp.swift */; };
+		AD067E6127D9DDD300EF0D6E /* TACLeanAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD067E3827D9DDD200EF0D6E /* TACLeanAppApp.swift */; };
+		AD067E6227D9DDD300EF0D6E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD067E3927D9DDD200EF0D6E /* MainView.swift */; };
+		AD067E6327D9DDD300EF0D6E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD067E3927D9DDD200EF0D6E /* MainView.swift */; };
+		AD067E6427D9DDD300EF0D6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD067E3A27D9DDD300EF0D6E /* Assets.xcassets */; };
+		AD067E6527D9DDD300EF0D6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD067E3A27D9DDD300EF0D6E /* Assets.xcassets */; };
+		ADC7362F27D9DEC200C2E1AC /* RootState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC7362E27D9DEC200C2E1AC /* RootState.swift */; };
+		ADC7363227D9DEED00C2E1AC /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = ADC7363127D9DEED00C2E1AC /* ComposableArchitecture */; };
+		ADC7363427D9DF1C00C2E1AC /* RootAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC7363327D9DF1C00C2E1AC /* RootAction.swift */; };
+		ADC7363627D9DF8300C2E1AC /* RootEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC7363527D9DF8300C2E1AC /* RootEnvironment.swift */; };
+		ADC7363827D9DF9900C2E1AC /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC7363727D9DF9900C2E1AC /* RootView.swift */; };
+		ADC7363D27D9E15F00C2E1AC /* RootReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC7363C27D9E15F00C2E1AC /* RootReducer.swift */; };
+		ADC7363F27D9E76900C2E1AC /* MainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC7363E27D9E76900C2E1AC /* MainState.swift */; };
+		ADC7364127D9E79600C2E1AC /* MainAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC7364027D9E79600C2E1AC /* MainAction.swift */; };
+		ADC7364327D9E85A00C2E1AC /* MainEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC7364227D9E85A00C2E1AC /* MainEnvironment.swift */; };
+		ADC7364527D9E87300C2E1AC /* MainReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC7364427D9E87300C2E1AC /* MainReducer.swift */; };
+		ADC7364727D9EC8900C2E1AC /* OnboardingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC7364627D9EC8900C2E1AC /* OnboardingState.swift */; };
+		ADC7364927D9ECCD00C2E1AC /* OnboardingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC7364827D9ECCD00C2E1AC /* OnboardingAction.swift */; };
+		ADC7364B27D9ECFC00C2E1AC /* OnboardingEnvironemnt.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC7364A27D9ECFC00C2E1AC /* OnboardingEnvironemnt.swift */; };
+		ADC7364D27D9ED1800C2E1AC /* OnboardingReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC7364C27D9ED1800C2E1AC /* OnboardingReducer.swift */; };
+		ADC7364F27D9EE1200C2E1AC /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC7364E27D9EE1200C2E1AC /* OnboardingView.swift */; };
+		ADD6DE0627DB143D002C47FA /* TodoState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD6DE0527DB143D002C47FA /* TodoState.swift */; };
+		ADD6DE0827DB1473002C47FA /* TodoAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD6DE0727DB1473002C47FA /* TodoAction.swift */; };
+		ADD6DE0A27DB14D7002C47FA /* TodoEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD6DE0927DB14D7002C47FA /* TodoEnvironment.swift */; };
+		ADD6DE0C27DB14EF002C47FA /* TodoReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD6DE0B27DB14EF002C47FA /* TodoReducer.swift */; };
+		ADD6DE0E27DB1575002C47FA /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD6DE0D27DB1575002C47FA /* TodoView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD067E4D27D9DDD300EF0D6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD067E3327D9DDD200EF0D6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD067E3E27D9DDD300EF0D6E;
+			remoteInfo = "TACLeanApp (iOS)";
+		};
+		AD067E5927D9DDD300EF0D6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD067E3327D9DDD200EF0D6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD067E4427D9DDD300EF0D6E;
+			remoteInfo = "TACLeanApp (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD067E3827D9DDD200EF0D6E /* TACLeanAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TACLeanAppApp.swift; sourceTree = "<group>"; };
+		AD067E3927D9DDD200EF0D6E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		AD067E3A27D9DDD300EF0D6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD067E3F27D9DDD300EF0D6E /* TACLearnApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TACLearnApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD067E4527D9DDD300EF0D6E /* TACLearnApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TACLearnApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD067E4727D9DDD300EF0D6E /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		AD067E4C27D9DDD300EF0D6E /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD067E5027D9DDD300EF0D6E /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		AD067E5227D9DDD300EF0D6E /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		AD067E5827D9DDD300EF0D6E /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD067E5C27D9DDD300EF0D6E /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		AD067E5E27D9DDD300EF0D6E /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		ADC7362E27D9DEC200C2E1AC /* RootState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootState.swift; sourceTree = "<group>"; };
+		ADC7363327D9DF1C00C2E1AC /* RootAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootAction.swift; sourceTree = "<group>"; };
+		ADC7363527D9DF8300C2E1AC /* RootEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootEnvironment.swift; sourceTree = "<group>"; };
+		ADC7363727D9DF9900C2E1AC /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		ADC7363C27D9E15F00C2E1AC /* RootReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootReducer.swift; sourceTree = "<group>"; };
+		ADC7363E27D9E76900C2E1AC /* MainState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainState.swift; sourceTree = "<group>"; };
+		ADC7364027D9E79600C2E1AC /* MainAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAction.swift; sourceTree = "<group>"; };
+		ADC7364227D9E85A00C2E1AC /* MainEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEnvironment.swift; sourceTree = "<group>"; };
+		ADC7364427D9E87300C2E1AC /* MainReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainReducer.swift; sourceTree = "<group>"; };
+		ADC7364627D9EC8900C2E1AC /* OnboardingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingState.swift; sourceTree = "<group>"; };
+		ADC7364827D9ECCD00C2E1AC /* OnboardingAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAction.swift; sourceTree = "<group>"; };
+		ADC7364A27D9ECFC00C2E1AC /* OnboardingEnvironemnt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingEnvironemnt.swift; sourceTree = "<group>"; };
+		ADC7364C27D9ED1800C2E1AC /* OnboardingReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingReducer.swift; sourceTree = "<group>"; };
+		ADC7364E27D9EE1200C2E1AC /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		ADD6DE0527DB143D002C47FA /* TodoState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoState.swift; sourceTree = "<group>"; };
+		ADD6DE0727DB1473002C47FA /* TodoAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAction.swift; sourceTree = "<group>"; };
+		ADD6DE0927DB14D7002C47FA /* TodoEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoEnvironment.swift; sourceTree = "<group>"; };
+		ADD6DE0B27DB14EF002C47FA /* TodoReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoReducer.swift; sourceTree = "<group>"; };
+		ADD6DE0D27DB1575002C47FA /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD067E3C27D9DDD300EF0D6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADC7363227D9DEED00C2E1AC /* ComposableArchitecture in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD067E4227D9DDD300EF0D6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD067E4927D9DDD300EF0D6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD067E5527D9DDD300EF0D6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD067E3227D9DDD200EF0D6E = {
+			isa = PBXGroup;
+			children = (
+				AD067E3727D9DDD200EF0D6E /* Shared */,
+				AD067E4627D9DDD300EF0D6E /* macOS */,
+				AD067E4F27D9DDD300EF0D6E /* Tests iOS */,
+				AD067E5B27D9DDD300EF0D6E /* Tests macOS */,
+				AD067E4027D9DDD300EF0D6E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD067E3727D9DDD200EF0D6E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				AD067E7827D9DE4000EF0D6E /* View */,
+				AD067E7427D9DDE700EF0D6E /* App */,
+				AD067E7527D9DDF000EF0D6E /* Resource */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		AD067E4027D9DDD300EF0D6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD067E3F27D9DDD300EF0D6E /* TACLearnApp.app */,
+				AD067E4527D9DDD300EF0D6E /* TACLearnApp.app */,
+				AD067E4C27D9DDD300EF0D6E /* Tests iOS.xctest */,
+				AD067E5827D9DDD300EF0D6E /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD067E4627D9DDD300EF0D6E /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				AD067E4727D9DDD300EF0D6E /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		AD067E4F27D9DDD300EF0D6E /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AD067E5027D9DDD300EF0D6E /* Tests_iOS.swift */,
+				AD067E5227D9DDD300EF0D6E /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		AD067E5B27D9DDD300EF0D6E /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				AD067E5C27D9DDD300EF0D6E /* Tests_macOS.swift */,
+				AD067E5E27D9DDD300EF0D6E /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		AD067E7427D9DDE700EF0D6E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AD067E3827D9DDD200EF0D6E /* TACLeanAppApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AD067E7527D9DDF000EF0D6E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				AD067E3A27D9DDD300EF0D6E /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		AD067E7627D9DE0400EF0D6E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				ADD6DE0427DB13F8002C47FA /* Todo */,
+				ADC7363E27D9E76900C2E1AC /* MainState.swift */,
+				ADC7364027D9E79600C2E1AC /* MainAction.swift */,
+				ADC7364227D9E85A00C2E1AC /* MainEnvironment.swift */,
+				ADC7364427D9E87300C2E1AC /* MainReducer.swift */,
+				AD067E3927D9DDD200EF0D6E /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AD067E7727D9DE1100EF0D6E /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				ADC7362E27D9DEC200C2E1AC /* RootState.swift */,
+				ADC7363327D9DF1C00C2E1AC /* RootAction.swift */,
+				ADC7363527D9DF8300C2E1AC /* RootEnvironment.swift */,
+				ADC7363C27D9E15F00C2E1AC /* RootReducer.swift */,
+				ADC7363727D9DF9900C2E1AC /* RootView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		AD067E7827D9DE4000EF0D6E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD067E7927D9DE5F00EF0D6E /* Onboarding */,
+				AD067E7627D9DE0400EF0D6E /* Main */,
+				AD067E7727D9DE1100EF0D6E /* Root */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD067E7927D9DE5F00EF0D6E /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				ADC7364627D9EC8900C2E1AC /* OnboardingState.swift */,
+				ADC7364827D9ECCD00C2E1AC /* OnboardingAction.swift */,
+				ADC7364A27D9ECFC00C2E1AC /* OnboardingEnvironemnt.swift */,
+				ADC7364C27D9ED1800C2E1AC /* OnboardingReducer.swift */,
+				ADC7364E27D9EE1200C2E1AC /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		ADD6DE0427DB13F8002C47FA /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				ADD6DE0527DB143D002C47FA /* TodoState.swift */,
+				ADD6DE0727DB1473002C47FA /* TodoAction.swift */,
+				ADD6DE0927DB14D7002C47FA /* TodoEnvironment.swift */,
+				ADD6DE0B27DB14EF002C47FA /* TodoReducer.swift */,
+				ADD6DE0D27DB1575002C47FA /* TodoView.swift */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD067E3E27D9DDD300EF0D6E /* TACLearnApp (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD067E6827D9DDD300EF0D6E /* Build configuration list for PBXNativeTarget "TACLearnApp (iOS)" */;
+			buildPhases = (
+				AD067E3B27D9DDD300EF0D6E /* Sources */,
+				AD067E3C27D9DDD300EF0D6E /* Frameworks */,
+				AD067E3D27D9DDD300EF0D6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TACLearnApp (iOS)";
+			packageProductDependencies = (
+				ADC7363127D9DEED00C2E1AC /* ComposableArchitecture */,
+			);
+			productName = "TACLeanApp (iOS)";
+			productReference = AD067E3F27D9DDD300EF0D6E /* TACLearnApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD067E4427D9DDD300EF0D6E /* TACLearnApp (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD067E6B27D9DDD300EF0D6E /* Build configuration list for PBXNativeTarget "TACLearnApp (macOS)" */;
+			buildPhases = (
+				AD067E4127D9DDD300EF0D6E /* Sources */,
+				AD067E4227D9DDD300EF0D6E /* Frameworks */,
+				AD067E4327D9DDD300EF0D6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TACLearnApp (macOS)";
+			productName = "TACLeanApp (macOS)";
+			productReference = AD067E4527D9DDD300EF0D6E /* TACLearnApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD067E4B27D9DDD300EF0D6E /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD067E6E27D9DDD300EF0D6E /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				AD067E4827D9DDD300EF0D6E /* Sources */,
+				AD067E4927D9DDD300EF0D6E /* Frameworks */,
+				AD067E4A27D9DDD300EF0D6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD067E4E27D9DDD300EF0D6E /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = AD067E4C27D9DDD300EF0D6E /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		AD067E5727D9DDD300EF0D6E /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD067E7127D9DDD300EF0D6E /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				AD067E5427D9DDD300EF0D6E /* Sources */,
+				AD067E5527D9DDD300EF0D6E /* Frameworks */,
+				AD067E5627D9DDD300EF0D6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD067E5A27D9DDD300EF0D6E /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = AD067E5827D9DDD300EF0D6E /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD067E3327D9DDD200EF0D6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					AD067E3E27D9DDD300EF0D6E = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					AD067E4427D9DDD300EF0D6E = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					AD067E4B27D9DDD300EF0D6E = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = AD067E3E27D9DDD300EF0D6E;
+					};
+					AD067E5727D9DDD300EF0D6E = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = AD067E4427D9DDD300EF0D6E;
+					};
+				};
+			};
+			buildConfigurationList = AD067E3627D9DDD200EF0D6E /* Build configuration list for PBXProject "TACLearnApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD067E3227D9DDD200EF0D6E;
+			packageReferences = (
+				ADC7363027D9DEED00C2E1AC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
+			productRefGroup = AD067E4027D9DDD300EF0D6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD067E3E27D9DDD300EF0D6E /* TACLearnApp (iOS) */,
+				AD067E4427D9DDD300EF0D6E /* TACLearnApp (macOS) */,
+				AD067E4B27D9DDD300EF0D6E /* Tests iOS */,
+				AD067E5727D9DDD300EF0D6E /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD067E3D27D9DDD300EF0D6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD067E6427D9DDD300EF0D6E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD067E4327D9DDD300EF0D6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD067E6527D9DDD300EF0D6E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD067E4A27D9DDD300EF0D6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD067E5627D9DDD300EF0D6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD067E3B27D9DDD300EF0D6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADC7364727D9EC8900C2E1AC /* OnboardingState.swift in Sources */,
+				ADC7363F27D9E76900C2E1AC /* MainState.swift in Sources */,
+				ADC7364D27D9ED1800C2E1AC /* OnboardingReducer.swift in Sources */,
+				AD067E6227D9DDD300EF0D6E /* MainView.swift in Sources */,
+				ADC7364527D9E87300C2E1AC /* MainReducer.swift in Sources */,
+				ADC7364127D9E79600C2E1AC /* MainAction.swift in Sources */,
+				ADC7363427D9DF1C00C2E1AC /* RootAction.swift in Sources */,
+				ADD6DE0E27DB1575002C47FA /* TodoView.swift in Sources */,
+				ADC7364327D9E85A00C2E1AC /* MainEnvironment.swift in Sources */,
+				ADC7363827D9DF9900C2E1AC /* RootView.swift in Sources */,
+				ADC7364927D9ECCD00C2E1AC /* OnboardingAction.swift in Sources */,
+				ADC7362F27D9DEC200C2E1AC /* RootState.swift in Sources */,
+				ADC7363627D9DF8300C2E1AC /* RootEnvironment.swift in Sources */,
+				AD067E6027D9DDD300EF0D6E /* TACLeanAppApp.swift in Sources */,
+				ADD6DE0627DB143D002C47FA /* TodoState.swift in Sources */,
+				ADD6DE0A27DB14D7002C47FA /* TodoEnvironment.swift in Sources */,
+				ADC7364F27D9EE1200C2E1AC /* OnboardingView.swift in Sources */,
+				ADD6DE0C27DB14EF002C47FA /* TodoReducer.swift in Sources */,
+				ADD6DE0827DB1473002C47FA /* TodoAction.swift in Sources */,
+				ADC7364B27D9ECFC00C2E1AC /* OnboardingEnvironemnt.swift in Sources */,
+				ADC7363D27D9E15F00C2E1AC /* RootReducer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD067E4127D9DDD300EF0D6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD067E6327D9DDD300EF0D6E /* MainView.swift in Sources */,
+				AD067E6127D9DDD300EF0D6E /* TACLeanAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD067E4827D9DDD300EF0D6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD067E5327D9DDD300EF0D6E /* Tests_iOSLaunchTests.swift in Sources */,
+				AD067E5127D9DDD300EF0D6E /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD067E5427D9DDD300EF0D6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD067E5F27D9DDD300EF0D6E /* Tests_macOSLaunchTests.swift in Sources */,
+				AD067E5D27D9DDD300EF0D6E /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD067E4E27D9DDD300EF0D6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD067E3E27D9DDD300EF0D6E /* TACLearnApp (iOS) */;
+			targetProxy = AD067E4D27D9DDD300EF0D6E /* PBXContainerItemProxy */;
+		};
+		AD067E5A27D9DDD300EF0D6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD067E4427D9DDD300EF0D6E /* TACLearnApp (macOS) */;
+			targetProxy = AD067E5927D9DDD300EF0D6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AD067E6627D9DDD300EF0D6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD067E6727D9DDD300EF0D6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		AD067E6927D9DDD300EF0D6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75P8DRATKX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = togi.TACLeanApp;
+				PRODUCT_NAME = TACLearnApp;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD067E6A27D9DDD300EF0D6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75P8DRATKX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = togi.TACLeanApp;
+				PRODUCT_NAME = TACLearnApp;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD067E6C27D9DDD300EF0D6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75P8DRATKX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = togi.TACLeanApp;
+				PRODUCT_NAME = TACLearnApp;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AD067E6D27D9DDD300EF0D6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75P8DRATKX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = togi.TACLeanApp;
+				PRODUCT_NAME = TACLearnApp;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AD067E6F27D9DDD300EF0D6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75P8DRATKX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "togi.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TACLeanApp (iOS)";
+			};
+			name = Debug;
+		};
+		AD067E7027D9DDD300EF0D6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75P8DRATKX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "togi.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TACLeanApp (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD067E7227D9DDD300EF0D6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75P8DRATKX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "togi.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "TACLeanApp (macOS)";
+			};
+			name = Debug;
+		};
+		AD067E7327D9DDD300EF0D6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75P8DRATKX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "togi.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "TACLeanApp (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD067E3627D9DDD200EF0D6E /* Build configuration list for PBXProject "TACLearnApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD067E6627D9DDD300EF0D6E /* Debug */,
+				AD067E6727D9DDD300EF0D6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD067E6827D9DDD300EF0D6E /* Build configuration list for PBXNativeTarget "TACLearnApp (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD067E6927D9DDD300EF0D6E /* Debug */,
+				AD067E6A27D9DDD300EF0D6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD067E6B27D9DDD300EF0D6E /* Build configuration list for PBXNativeTarget "TACLearnApp (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD067E6C27D9DDD300EF0D6E /* Debug */,
+				AD067E6D27D9DDD300EF0D6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD067E6E27D9DDD300EF0D6E /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD067E6F27D9DDD300EF0D6E /* Debug */,
+				AD067E7027D9DDD300EF0D6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD067E7127D9DDD300EF0D6E /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD067E7227D9DDD300EF0D6E /* Debug */,
+				AD067E7327D9DDD300EF0D6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ADC7363027D9DEED00C2E1AC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ADC7363127D9DEED00C2E1AC /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADC7363027D9DEED00C2E1AC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AD067E3327D9DDD200EF0D6E /* Project object */;
+}
