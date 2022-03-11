@@ -60,8 +60,8 @@
 		AD067E3827D9DDD200EF0D6E /* TACLeanAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TACLeanAppApp.swift; sourceTree = "<group>"; };
 		AD067E3927D9DDD200EF0D6E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		AD067E3A27D9DDD300EF0D6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AD067E3F27D9DDD300EF0D6E /* TACLearnApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TACLearnApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD067E4527D9DDD300EF0D6E /* TACLearnApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TACLearnApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD067E3F27D9DDD300EF0D6E /* TCALearnApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCALearnApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD067E4527D9DDD300EF0D6E /* TCALearnApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCALearnApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD067E4727D9DDD300EF0D6E /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		AD067E4C27D9DDD300EF0D6E /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD067E5027D9DDD300EF0D6E /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
@@ -147,8 +147,8 @@
 		AD067E4027D9DDD300EF0D6E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AD067E3F27D9DDD300EF0D6E /* TACLearnApp.app */,
-				AD067E4527D9DDD300EF0D6E /* TACLearnApp.app */,
+				AD067E3F27D9DDD300EF0D6E /* TCALearnApp.app */,
+				AD067E4527D9DDD300EF0D6E /* TCALearnApp.app */,
 				AD067E4C27D9DDD300EF0D6E /* Tests iOS.xctest */,
 				AD067E5827D9DDD300EF0D6E /* Tests macOS.xctest */,
 			);
@@ -259,9 +259,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AD067E3E27D9DDD300EF0D6E /* TACLearnApp (iOS) */ = {
+		AD067E3E27D9DDD300EF0D6E /* TCALearnApp (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD067E6827D9DDD300EF0D6E /* Build configuration list for PBXNativeTarget "TACLearnApp (iOS)" */;
+			buildConfigurationList = AD067E6827D9DDD300EF0D6E /* Build configuration list for PBXNativeTarget "TCALearnApp (iOS)" */;
 			buildPhases = (
 				AD067E3B27D9DDD300EF0D6E /* Sources */,
 				AD067E3C27D9DDD300EF0D6E /* Frameworks */,
@@ -271,17 +271,17 @@
 			);
 			dependencies = (
 			);
-			name = "TACLearnApp (iOS)";
+			name = "TCALearnApp (iOS)";
 			packageProductDependencies = (
 				ADC7363127D9DEED00C2E1AC /* ComposableArchitecture */,
 			);
 			productName = "TACLeanApp (iOS)";
-			productReference = AD067E3F27D9DDD300EF0D6E /* TACLearnApp.app */;
+			productReference = AD067E3F27D9DDD300EF0D6E /* TCALearnApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AD067E4427D9DDD300EF0D6E /* TACLearnApp (macOS) */ = {
+		AD067E4427D9DDD300EF0D6E /* TCALearnApp (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD067E6B27D9DDD300EF0D6E /* Build configuration list for PBXNativeTarget "TACLearnApp (macOS)" */;
+			buildConfigurationList = AD067E6B27D9DDD300EF0D6E /* Build configuration list for PBXNativeTarget "TCALearnApp (macOS)" */;
 			buildPhases = (
 				AD067E4127D9DDD300EF0D6E /* Sources */,
 				AD067E4227D9DDD300EF0D6E /* Frameworks */,
@@ -291,9 +291,9 @@
 			);
 			dependencies = (
 			);
-			name = "TACLearnApp (macOS)";
+			name = "TCALearnApp (macOS)";
 			productName = "TACLeanApp (macOS)";
-			productReference = AD067E4527D9DDD300EF0D6E /* TACLearnApp.app */;
+			productReference = AD067E4527D9DDD300EF0D6E /* TCALearnApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		AD067E4B27D9DDD300EF0D6E /* Tests iOS */ = {
@@ -358,7 +358,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AD067E3627D9DDD200EF0D6E /* Build configuration list for PBXProject "TACLearnApp" */;
+			buildConfigurationList = AD067E3627D9DDD200EF0D6E /* Build configuration list for PBXProject "TCALearnApp" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -374,8 +374,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AD067E3E27D9DDD300EF0D6E /* TACLearnApp (iOS) */,
-				AD067E4427D9DDD300EF0D6E /* TACLearnApp (macOS) */,
+				AD067E3E27D9DDD300EF0D6E /* TCALearnApp (iOS) */,
+				AD067E4427D9DDD300EF0D6E /* TCALearnApp (macOS) */,
 				AD067E4B27D9DDD300EF0D6E /* Tests iOS */,
 				AD067E5727D9DDD300EF0D6E /* Tests macOS */,
 			);
@@ -476,12 +476,12 @@
 /* Begin PBXTargetDependency section */
 		AD067E4E27D9DDD300EF0D6E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AD067E3E27D9DDD300EF0D6E /* TACLearnApp (iOS) */;
+			target = AD067E3E27D9DDD300EF0D6E /* TCALearnApp (iOS) */;
 			targetProxy = AD067E4D27D9DDD300EF0D6E /* PBXContainerItemProxy */;
 		};
 		AD067E5A27D9DDD300EF0D6E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AD067E4427D9DDD300EF0D6E /* TACLearnApp (macOS) */;
+			target = AD067E4427D9DDD300EF0D6E /* TCALearnApp (macOS) */;
 			targetProxy = AD067E5927D9DDD300EF0D6E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -620,7 +620,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = togi.TACLeanApp;
-				PRODUCT_NAME = TACLearnApp;
+				PRODUCT_NAME = TCALearnApp;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -650,7 +650,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = togi.TACLeanApp;
-				PRODUCT_NAME = TACLearnApp;
+				PRODUCT_NAME = TCALearnApp;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -680,7 +680,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = togi.TACLeanApp;
-				PRODUCT_NAME = TACLearnApp;
+				PRODUCT_NAME = TCALearnApp;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -708,7 +708,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = togi.TACLeanApp;
-				PRODUCT_NAME = TACLearnApp;
+				PRODUCT_NAME = TCALearnApp;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -797,7 +797,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AD067E3627D9DDD200EF0D6E /* Build configuration list for PBXProject "TACLearnApp" */ = {
+		AD067E3627D9DDD200EF0D6E /* Build configuration list for PBXProject "TCALearnApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD067E6627D9DDD300EF0D6E /* Debug */,
@@ -806,7 +806,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD067E6827D9DDD300EF0D6E /* Build configuration list for PBXNativeTarget "TACLearnApp (iOS)" */ = {
+		AD067E6827D9DDD300EF0D6E /* Build configuration list for PBXNativeTarget "TCALearnApp (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD067E6927D9DDD300EF0D6E /* Debug */,
@@ -815,7 +815,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD067E6B27D9DDD300EF0D6E /* Build configuration list for PBXNativeTarget "TACLearnApp (macOS)" */ = {
+		AD067E6B27D9DDD300EF0D6E /* Build configuration list for PBXNativeTarget "TCALearnApp (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD067E6C27D9DDD300EF0D6E /* Debug */,
