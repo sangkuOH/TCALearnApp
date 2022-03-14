@@ -20,12 +20,7 @@ struct TodoView: View {
 	
 	var body: some View {
 		HStack {
-			TextField("",
-								text: viewStore.binding(
-									get: \.description,
-									send: TodoAction.textfieldChanged
-								)
-			)
+			TextField("", text: viewStore.binding(\.$description))
 			Spacer()
 			Button {
 				viewStore.send(.circlebadgeTapped)
@@ -61,11 +56,11 @@ struct TodoView_Previews: PreviewProvider {
 }
 
 typealias TodoStore = Store<
-	Todo,
+	TodoState,
 	TodoAction
 >
 
 typealias TodoViewStore = ViewStore<
-	Todo,
+	TodoState,
 	TodoAction
 >

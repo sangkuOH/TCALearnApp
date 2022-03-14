@@ -8,9 +8,11 @@
 import Foundation
 import ComposableArchitecture
 
-let todoReducer: Reducer<Todo, TodoAction, TodoEnvironment> =
+let todoReducer: Reducer<TodoState, TodoAction, TodoEnvironment> =
 	.init { state, action, environment in
 		switch action {
+		case .binding:
+			return .none
 		case .circlebadgeTapped:
 			state.isFinish.toggle()
 			return .none
@@ -19,5 +21,6 @@ let todoReducer: Reducer<Todo, TodoAction, TodoEnvironment> =
 			return .none
 		}
 	}
+	.binding()
 	.debug()
 

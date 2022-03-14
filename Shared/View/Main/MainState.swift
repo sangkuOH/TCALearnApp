@@ -10,6 +10,5 @@ import IdentifiedCollections
 import ComposableArchitecture
 
 struct MainState: Equatable {
-	@BindableState var text = ""
-	@BindableState var todos: IdentifiedArrayOf<Todo> = []
+	var todos: IdentifiedArrayOf<TodoState> = []
 }

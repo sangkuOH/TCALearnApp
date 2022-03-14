@@ -18,10 +18,8 @@ let mainReducer: Reducer<MainState, MainAction, MainEnvironment> =
 			),
 		.init { state, action, environment in
 			switch action {
-			case .binding:
-				return .none
 			case .addTodo(let item):
-				state.todos.append(Todo(description: item))
+				state.todos.append(TodoState(description: item))
 				return .none
 			case .deleteTodo(let indexSet):
 				state.todos.remove(atOffsets: indexSet)
@@ -32,15 +30,12 @@ let mainReducer: Reducer<MainState, MainAction, MainEnvironment> =
 			case .todoAction(id: let id, action: let action):
 				switch action {
 				case .circlebadgeTapped:
-					return .concatenate(
-						Effect(value: .deleteTodoWithId(id))
-							.delay(for: 1.5, scheduler: environment.mainQueue)
-							.eraseToEffect()
-					)
+					return Effect(value: .deleteTodoWithId(id))
+						.delay(for: 1.5, scheduler: environment.mainQueue)
+						.eraseToEffect()
 				default:
 					return .none
 				}
 			}
 		}
 	)
-	.binding()

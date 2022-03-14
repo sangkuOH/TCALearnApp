@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import ComposableArchitecture
 
-struct Todo: Equatable, Identifiable {
+struct TodoState: Equatable, Identifiable {
 	let id = UUID()
 	var isFinish: Bool = false
-	var description: String
+	@BindableState var description: String
 }

@@ -8,8 +8,7 @@
 import Foundation
 import ComposableArchitecture
 
-enum MainAction: Equatable, BindableAction {
-	case binding(BindingAction<MainState>)
+enum MainAction: Equatable {
 	case addTodo(String)
 	case deleteTodo(IndexSet)
 	case deleteTodoWithId(UUID)

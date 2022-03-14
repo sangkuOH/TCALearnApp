@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import ComposableArchitecture
 
-enum TodoAction: Equatable {
+enum TodoAction: Equatable, BindableAction {
+	case binding(BindingAction<TodoState>)
 	case textfieldChanged(String)
 	case circlebadgeTapped
 }
